@@ -1,0 +1,3 @@
+git+https://github.com/nomad-coe/nomad-simulations.git@6a7668bcda0c074f8696eddccf326973acff41ac
+git+https://github.com/FAIRmat-NFDI/nomad-parser-wannier90.git@bf48a74e3f9e74a1a358b5ee74766b9c5eaa729b
+git+https://github.com/FAIRmat-NFDI/nomad-parser-vasp.git@c75d16e932da93f826b7c5023a8010f914d8a89f
