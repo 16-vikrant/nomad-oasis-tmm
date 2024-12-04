@@ -9,11 +9,11 @@ oasis:
       - vikrant.chaudhary@physik.hu-berlin.de
       - chaudhary@tmm.tu-darmstadt.de
 north:
-  jupyterhub_crypt_key: "65fd1f2aecd15e8f5fcf97fd54c004901b50ee67be1728bd5a31fb2d566d6b4f"
+  jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
   tools:
     options:
       jupyter:
-        image: ghcr.io/16-vikrant/nomad-oasis-tmm/jupyter:main
+        image: ghcr.io/fairmat-nfdi/nomad-distribution-template/jupyter:main
 
 meta:
   deployment: "oasis"
