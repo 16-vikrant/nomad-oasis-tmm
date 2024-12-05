@@ -21,7 +21,7 @@ meta:
   maintainer_email: "vikrant.chaudhary@physik.hu-berlin.de"
 
 logstash:
-  enable: false
+  enabled: false
 
 mongo:
   db_name: nomad_oasis_v1
