@@ -27,7 +27,14 @@ plugins = [
   "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git@f394d21abafeb659729af0c94e5f90949fce01c1",
   "nomad-utility-workflows @ git+https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git@45a8888d1b893c640fd4a4e18548e53c4ce4be2b",
 ]
-jupyter = []
+jupyter = [
+  "voila",
+  "ipyaggrid",
+  "ipysheet",
+  "ipydatagrid",
+  "jupyter-flex",
+  "pyOpenSSL",
+]
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
 
 [tool.uv]
