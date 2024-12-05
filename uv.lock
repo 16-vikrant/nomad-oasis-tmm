@@ -2972,7 +2972,6 @@ jupyter = [
 ]
 plugins = [
     { name = "nomad-parser-vasp" },
-    { name = "nomad-parser-wannier90" },
     { name = "nomad-simulations" },
     { name = "perovskite-solar-cell-database" },
 ]
@@ -2986,7 +2985,6 @@ requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-parser-vasp", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-parser-vasp.git?rev=c75d16e932da93f826b7c5023a8010f914d8a89f#c75d16e932da93f826b7c5023a8010f914d8a89f" },
-    { name = "nomad-parser-wannier90", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-parser-wannier90.git?rev=bf48a74e3f9e74a1a358b5ee74766b9c5eaa729b#bf48a74e3f9e74a1a358b5ee74766b9c5eaa729b" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", git = "https://github.com/nomad-coe/nomad-simulations.git?rev=6a7668bcda0c074f8696eddccf326973acff41ac#6a7668bcda0c074f8696eddccf326973acff41ac" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=f394d21abafeb659729af0c94e5f90949fce01c1#f394d21abafeb659729af0c94e5f90949fce01c1" },
     { name = "pyopenssl", marker = "extra == 'jupyter'" },
@@ -3141,15 +3139,6 @@ dependencies = [
     { name = "nomad-lab" },
     { name = "nomad-simulations" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
-]
-
-[[package]]
-name = "nomad-parser-wannier90"
-version = "0.0.1.dev26+gbf48a74"
-source = { git = "https://github.com/FAIRmat-NFDI/nomad-parser-wannier90.git?rev=bf48a74e3f9e74a1a358b5ee74766b9c5eaa729b#bf48a74e3f9e74a1a358b5ee74766b9c5eaa729b" }
-dependencies = [
-    { name = "nomad-lab" },
-    { name = "nomad-simulations" },
 ]
 
 [[package]]
