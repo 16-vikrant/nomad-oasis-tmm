@@ -9,27 +9,19 @@ oasis:
       - vikrant.chaudhary@physik.hu-berlin.de
       - chaudhary@tmm.tu-darmstadt.de
 north:
-  enable: true
   jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
   tools:
-    include:
-      - jupyter
     options:
       jupyter:
-        short_description: A JupyterLab container with pre-installed NOMAD plugins.
-        image: ghcr.io/16-vikrant/nomad-oasis-tmm/jupyter:main
+        image: ghcr.io/fairmat-nfdi/nomad-distro-template/jupyter:main
 
 meta:
   deployment: "oasis"
   deployment_url: "https://my-oasis.org/api"
   maintainer_email: "vikrant.chaudhary@physik.hu-berlin.de"
 
-logtransfer:
-    enabled: true
-    transfer_interval: 10
-
-#logstash:
-#  enable: false
+logstash:
+  enable: false
 
 mongo:
   db_name: nomad_oasis_v1
