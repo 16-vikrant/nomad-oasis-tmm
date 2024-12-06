@@ -7,7 +7,9 @@ oasis:
   uses_central_user_management: true
   allowed_users:
       - vikrant.chaudhary@physik.hu-berlin.de
-      - chaudhary@tmm.tu-darmstadt.de
+      - *@tmm.tu-darmstadt.de
+      - zhaobo0713@gmail.com
+      
 north:
   jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
   tools:
