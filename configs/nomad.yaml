@@ -7,7 +7,7 @@ oasis:
   uses_central_user_management: true
   allowed_users:
       - vikrant.chaudhary@physik.hu-berlin.de
-      - chaudhary@tmm.tu-darmstadt.de
+      - *@tmm.tu-darmstadt.de
       - zhaobo0713@gmail.com
       
 north:
