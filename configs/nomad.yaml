@@ -11,6 +11,15 @@ oasis:
       - zhaobo0713@gmail.com
       - bo.zhao@tmm.tu-darmstadt.de
       - ruiwen.xie@tu-darmstadt.de
+      - mian.dai@tu-darmstadt.de
+      - sivadasan@tmm.tu-darmstadt.de
+      - haowang@tmm.tu-darmstadt.de
+      - xtang@tmm.tu-darmstadt.de
+      - fu.li@tu-darmstadt.de
+      - furongchen@tmm.tu-darmstadt.de
+      - wenling.ren@tmm.tu-darmstadt.de
+      - hzhang@tmm.tu-darmstadt.de
+
       
 north:
   jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
