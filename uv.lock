@@ -3357,7 +3357,7 @@ requires-dist = [
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.3.1" },
-    { name = "nomad-utility-workflows", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git?rev=45a8888d1b893c640fd4a4e18548e53c4ce4be2b" },
+    { name = "nomad-utility-workflows", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git?rev=883f683b1b9f094c3bdc195df9d92b7c5ebe2eaa" },
     { name = "pyopenssl", marker = "extra == 'jupyter'" },
     { name = "voila", marker = "extra == 'jupyter'" },
 ]
@@ -3932,8 +3932,8 @@ wheels = [
 
 [[package]]
 name = "nomad-schema-plugin-simulation-workflow"
-version = "1.0.6.dev4+ge516eb2"
-source = { git = "https://github.com/nomad-coe/nomad-schema-plugin-simulation-workflow.git?rev=develop#e516eb2e9e987bcfe9065643234d565d6ad8e4d2" }
+version = "1.0.8"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "mdanalysis", version = "2.7.0", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.10'" },
     { name = "mdanalysis", version = "2.8.0", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.10'" },
@@ -3942,6 +3942,10 @@ dependencies = [
     { name = "nomad-lab", version = "1.3.14", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "nomad-schema-plugin-run" },
     { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/96/88/7fcaa9940c8c5bea85a3848a0826200b5bcda8f8594b9078ef4436c8de2e/nomad_schema_plugin_simulation_workflow-1.0.8.tar.gz", hash = "sha256:334b9711e3b852b0bbd5a5e698d67df918c0884188641661d65c5959181a5b45", size = 8866911 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/4b/3a2b41966f7711beb9d5442275df7a1b3a8340d8549f1178f0b5e97c8ccf/nomad_schema_plugin_simulation_workflow-1.0.8-py3-none-any.whl", hash = "sha256:2599f58e8412cbd5bbcc15e1cdc80c7cdc1e5760b572136e283ce49450476577", size = 55327 },
 ]
 
 [[package]]
@@ -3960,8 +3964,8 @@ wheels = [
 
 [[package]]
 name = "nomad-utility-workflows"
-version = "0.1.0"
-source = { git = "https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git?rev=45a8888d1b893c640fd4a4e18548e53c4ce4be2b#45a8888d1b893c640fd4a4e18548e53c4ce4be2b" }
+version = "0.0.11"
+source = { git = "https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git?rev=883f683b1b9f094c3bdc195df9d92b7c5ebe2eaa#883f683b1b9f094c3bdc195df9d92b7c5ebe2eaa" }
 dependencies = [
     { name = "anyio" },
     { name = "cachetools" },
