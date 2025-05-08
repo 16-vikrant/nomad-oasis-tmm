@@ -37,7 +37,7 @@ plugins = [
   "nomad-parser-plugins-database>=1.0",
   "nomad-parser-wannierberri @ git+https://github.com/16-vikrant/nomad-parser-wannierberri.git@bba76975082af1a75ca94c6053d2d2c8c60b3f88",
   #"nomad-parser-vasp @ git+https://github.com/FAIRmat-NFDI/nomad-parser-vasp.git@c75d16e932da93f826b7c5023a8010f914d8a89f",
-  #"perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git@f394d21abafeb659729af0c94e5f90949fce01c1",
+  "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git@f394d21abafeb659729af0c94e5f90949fce01c1",
   #"nomad-utility-workflows @ git+https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git@883f683b1b9f094c3bdc195df9d92b7c5ebe2eaa",
 ]
 jupyter = [
