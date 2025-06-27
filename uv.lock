@@ -3642,6 +3642,8 @@ plugins = [
     { name = "nomad-schema-plugin-run" },
     { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
+    { name = "perovskite-solar-cell-database" },
+    { name = "wannierberri" },
 ]
 
 [package.metadata]
@@ -3661,14 +3663,16 @@ requires-dist = [
     { name = "nomad-normalizer-plugin-system", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-atomistic", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-database", marker = "extra == 'plugins'", specifier = ">=1.0" },
-    { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", specifier = ">=1.0" },
+    { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/electronic-parsers.git?rev=d500fc90d7389323b00cbf61fe0b7a5582d1ffcf" },
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.3.1" },
+    { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=f394d21abafeb659729af0c94e5f90949fce01c1" },
     { name = "pyopenssl", marker = "extra == 'jupyter'" },
     { name = "setuptools" },
     { name = "voila", marker = "extra == 'jupyter'" },
+    { name = "wannierberri", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=bba76975082af1a75ca94c6053d2d2c8c60b3f88" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
 
@@ -4094,8 +4098,8 @@ wheels = [
 
 [[package]]
 name = "nomad-parser-plugins-electronic"
-version = "1.0.3"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+version = "1.0.3.dev26+gd500fc9"
+source = { git = "https://github.com/16-vikrant/electronic-parsers.git?rev=d500fc90d7389323b00cbf61fe0b7a5582d1ffcf#d500fc90d7389323b00cbf61fe0b7a5582d1ffcf" }
 dependencies = [
     { name = "h5py" },
     { name = "lxml" },
@@ -4108,10 +4112,6 @@ dependencies = [
     { name = "pydantic", version = "1.10.21", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.10'" },
     { name = "pydantic", version = "2.10.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "pyyaml" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/40/b9/4c2980135256e74091680ae98f4e8686701789f65b8820b3b6b8f58f2446/nomad_parser_plugins_electronic-1.0.3.tar.gz", hash = "sha256:168314a51a42a990c16eacb0d6771fafd84f965f2fd4501138b01d4f4cbef0d3", size = 82889624, upload_time = "2025-01-29T11:02:52.462Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/be/bf36e897de87993cacd3bd5971dfa0714c6af89a48e3f40b1cc6960f21b1/nomad_parser_plugins_electronic-1.0.3-py3-none-any.whl", hash = "sha256:8a065b2016c10f508656a55e10d1a4b099f38060e54a55f0c86e5efc977f3aa6", size = 1128823, upload_time = "2025-01-29T11:02:44.97Z" },
 ]
 
 [[package]]
@@ -4563,6 +4563,16 @@ source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages
 sdist = { url = "https://files.pythonhosted.org/packages/ca/bc/f35b8446f4531a7cb215605d100cd88b7ac6f44ab3fc94870c120ab3adbf/pathspec-0.12.1.tar.gz", hash = "sha256:a482d51503a1ab33b1c67a6c3813a26953dbdc71c31dacaef9a838c4e29f5712", size = 51043, upload_time = "2023-12-10T22:30:45Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cc/20/ff623b09d963f88bfde16306a54e12ee5ea43e9b597108672ff3a408aad6/pathspec-0.12.1-py3-none-any.whl", hash = "sha256:a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08", size = 31191, upload_time = "2023-12-10T22:30:43.14Z" },
+]
+
+[[package]]
+name = "perovskite-solar-cell-database"
+version = "0.0.0"
+source = { git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=f394d21abafeb659729af0c94e5f90949fce01c1#f394d21abafeb659729af0c94e5f90949fce01c1" }
+dependencies = [
+    { name = "lxml-html-clean" },
+    { name = "openpyxl" },
+    { name = "rdkit" },
 ]
 
 [[package]]
@@ -6914,6 +6924,16 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/de/9e/e9c14c97507d1724779cbd7bf282c11c0be8b05e6e83f9f54607a2ebd8ed/voila-0.5.8.tar.gz", hash = "sha256:3d9078c252a8b1f3fe58d465749d31cdc241b29c8f4ab77f123be35a17e2da95", size = 5344487, upload_time = "2024-10-18T10:08:59.431Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7a/fc/ebc74e04619f84200df9ab029be6aeeab6ae3b82ec3e97c177d83839383d/voila-0.5.8-py3-none-any.whl", hash = "sha256:7cdb1f0629a2e9c11f0c07e7d386f3b7cc5441f584dc9b8030d08a82e5c09063", size = 4511252, upload_time = "2024-10-18T10:08:56.464Z" },
+]
+
+[[package]]
+name = "wannierberri"
+version = "0.1.0"
+source = { git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=bba76975082af1a75ca94c6053d2d2c8c60b3f88#bba76975082af1a75ca94c6053d2d2c8c60b3f88" }
+dependencies = [
+    { name = "nomad-lab", version = "1.3.13", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.10'" },
+    { name = "nomad-lab", version = "1.3.15", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
 ]
 
 [[package]]
