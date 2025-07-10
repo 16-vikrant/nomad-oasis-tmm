@@ -2934,7 +2934,7 @@ requires-dist = [
     { name = "pyopenssl", marker = "extra == 'jupyter'" },
     { name = "setuptools" },
     { name = "voila", marker = "extra == 'jupyter'" },
-    { name = "wannierberri", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=bba76975082af1a75ca94c6053d2d2c8c60b3f88" },
+    { name = "wannierberri", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=ec426214d3e1716b4374e4b89e35639f5e605fc8" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
 
@@ -5637,7 +5637,7 @@ wheels = [
 [[package]]
 name = "wannierberri"
 version = "0.1.0"
-source = { git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=bba76975082af1a75ca94c6053d2d2c8c60b3f88#bba76975082af1a75ca94c6053d2d2c8c60b3f88" }
+source = { git = "https://github.com/16-vikrant/nomad-parser-wannierberri.git?rev=ec426214d3e1716b4374e4b89e35639f5e605fc8#ec426214d3e1716b4374e4b89e35639f5e605fc8" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
