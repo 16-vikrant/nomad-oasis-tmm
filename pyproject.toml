@@ -36,7 +36,7 @@ plugins = [
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
   "nomad-parser-plugins-electronic @ git+https://github.com/16-vikrant/electronic-parsers.git@9d0a0d2cbb0f1e87a8ab0f996bbbe4f1bfd9fb59",
-  "wannierberri @ git+https://github.com/16-vikrant/nomad-parser-wannierberri.git@ec426214d3e1716b4374e4b89e35639f5e605fc8",
+  "wannierberri @ git+https://github.com/16-vikrant/nomad-parser-wannierberri.git@50ab99999d1a40743e73ae704a884067f7da9771",
   "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git@f394d21abafeb659729af0c94e5f90949fce01c1",
   #"nomad-utility-workflows @ git+https://github.com/FAIRmat-NFDI/nomad-utility-workflows.git@883f683b1b9f094c3bdc195df9d92b7c5ebe2eaa",
 ]
