@@ -2743,7 +2743,7 @@ requires-dist = [
     { name = "nomad-normalizer-plugin-system", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-atomistic", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-database", marker = "extra == 'plugins'", specifier = ">=1.0" },
-    { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/electronic-parsers.git?rev=db63521651a829eb08514763c70379dc6c6e4c25" },
+    { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/electronic-parsers.git?rev=dfe5617b7228eb6971be3389d990ffe97422713f" },
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-postw90", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/nomad-parser-postw90.git?rev=e1d3dcc229899ca90be865a8535f78dca56e8d7a" },
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
@@ -3000,8 +3000,8 @@ wheels = [
 
 [[package]]
 name = "nomad-parser-plugins-electronic"
-version = "1.0.3.dev28+gdb6352165"
-source = { git = "https://github.com/16-vikrant/electronic-parsers.git?rev=db63521651a829eb08514763c70379dc6c6e4c25#db63521651a829eb08514763c70379dc6c6e4c25" }
+version = "1.0.3.dev68+gdfe5617b7"
+source = { git = "https://github.com/16-vikrant/electronic-parsers.git?rev=dfe5617b7228eb6971be3389d990ffe97422713f#dfe5617b7228eb6971be3389d990ffe97422713f" }
 dependencies = [
     { name = "h5py" },
     { name = "lxml" },
@@ -3010,6 +3010,7 @@ dependencies = [
     { name = "nomad-parser-plugins-simulation" },
     { name = "nomad-schema-plugin-run" },
     { name = "nomad-schema-plugin-simulation-workflow" },
+    { name = "numpy" },
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
