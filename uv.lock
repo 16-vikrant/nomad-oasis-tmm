@@ -2718,6 +2718,7 @@ plugins = [
     { name = "nomad-parser-plugins-database" },
     { name = "nomad-parser-plugins-electronic" },
     { name = "nomad-parser-plugins-workflow" },
+    { name = "nomad-parser-postw90" },
     { name = "nomad-schema-plugin-run" },
     { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
@@ -2744,6 +2745,7 @@ requires-dist = [
     { name = "nomad-parser-plugins-database", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/electronic-parsers.git?rev=db63521651a829eb08514763c70379dc6c6e4c25" },
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
+    { name = "nomad-parser-postw90", marker = "extra == 'plugins'", git = "https://github.com/16-vikrant/nomad-parser-postw90.git?rev=e1d3dcc229899ca90be865a8535f78dca56e8d7a" },
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.4.0" },
@@ -3043,6 +3045,17 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/50/03/f616a9962889c6bd06c0cc037d39138d8359af5858fdbd7caa8fc1c8c728/nomad_parser_plugins_workflow-1.1.8.tar.gz", hash = "sha256:df8603a0dbb8400a4e8005adb46290e7f06c628335fd6cc5ced79039d0f0ff8c", size = 31864751, upload_time = "2025-06-06T10:01:56.732Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/41/08/f2e69dac27a956e6f54cb930fab5ea93f62f30a3dce2b231a64f958af998/nomad_parser_plugins_workflow-1.1.8-py3-none-any.whl", hash = "sha256:0e932fababf0ffff5186b3c177ecd1c430b456d09b79a54b36fb1aac735268f6", size = 121426, upload_time = "2025-06-06T10:01:54.872Z" },
+]
+
+[[package]]
+name = "nomad-parser-postw90"
+version = "0.1.0"
+source = { git = "https://github.com/16-vikrant/nomad-parser-postw90.git?rev=e1d3dcc229899ca90be865a8535f78dca56e8d7a#e1d3dcc229899ca90be865a8535f78dca56e8d7a" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "nomad-schema-plugin-run" },
+    { name = "pydantic" },
+    { name = "temporalio" },
 ]
 
 [[package]]
